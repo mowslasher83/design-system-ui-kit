@@ -1,31 +1,31 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.js', // Entry point for the application
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js', // Output file name
+        path: path.resolve(__dirname, 'dist'), // Output directory
     },
     module: {
         rules: [
             {
-                test: /\.js$/, // Định nghĩa các file js
-                exclude: /node_modules/,
+                test: /\.js$/, // Define rules for JavaScript files
+                exclude: /node_modules/, // Exclude node_modules from processing
                 use: {
-                    loader: 'babel-loader',
+                    loader: 'babel-loader', // Use Babel for transpiling
                     options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        presets: ['@babel/preset-env', '@babel/preset-react'], // Presets for Babel
                     },
                 },
             },
             {
-                test: /\.css$/, // Định nghĩa các file css
-                use: ['style-loader', 'css-loader'],
+                test: /\.css$/, // Define rules for CSS files
+                use: ['style-loader', 'css-loader'], // Loaders for CSS
             },
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx'], // File extensions to resolve
     },
-    devtool: 'source-map',
+    devtool: 'source-map', // Enable source maps for debugging
 };
