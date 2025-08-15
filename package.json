@@ -26,5 +26,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yourusername/design-system-ui-kit.git"
+  },
+  "comments": {
+    "purpose": "This project serves as a UI toolkit for building consistent and rapid user interfaces within a minimalist design system."
   }
 }
