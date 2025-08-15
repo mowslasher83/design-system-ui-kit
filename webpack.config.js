@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /^\.js$/, // Define rules for JavaScript files
+                test: /.js$/, // Define rules for JavaScript files
                 exclude: /node_modules/, // Exclude node_modules from processing
                 use: {
                     loader: 'babel-loader', // Use Babel for transpiling
@@ -19,7 +19,7 @@ module.exports = {
                 },
             },
             {
-                test: /^\.css$/, // Define rules for CSS files
+                test: /.css$/, // Define rules for CSS files
                 use: ['style-loader', 'css-loader'], // Loaders for CSS
             },
         ],
