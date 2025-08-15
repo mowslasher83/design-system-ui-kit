@@ -1,0 +1,26 @@
+{
+  "name": "design-system-ui-kit",
+  "version": "1.0.0",
+  "description": "Một bộ công cụ UI cho hệ thống thiết kế tối giản để phát triển giao diện người dùng nhanh chóng và nhất quán.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "style-loader": "^1.0.0"
+  },
+  "license": "ISC"
+}
