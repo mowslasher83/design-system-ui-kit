@@ -22,5 +22,9 @@
     "css-loader": "^3.0.0",
     "style-loader": "^1.0.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/design-system-ui-kit.git"
+  }
 }
