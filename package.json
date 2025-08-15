@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open"  // script to start local development server
   },
   "dependencies": {
     "react": "^17.0.0",
